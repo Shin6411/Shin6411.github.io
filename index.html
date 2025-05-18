@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camp | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ヘッダー：ナビゲーション -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">Camp</a>
+      </div>
+      <div class="nav-toggle">≡</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#access">Access</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>自然と調和する贅沢なひととき</h1>
+      <p>極上のキャンプ体験をあなたに</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Our Camp</h2>
+      <p>
+        Campは、自然との調和を大切にした贅沢なキャンプ体験を提供する場所です。  
+        世界各地の美しい風景と快適な施設で、ゆったりとした時間をお楽しみいただけます。
+      </p>
+      <img src="https://source.unsplash.com/1200x600/?camping,nature" alt="キャンプの風景">
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="section facilities">
+    <div class="container">
+      <h2>Facilities</h2>
+      <div class="facility-items">
+        <div class="facility-item">
+          <img src="https://source.unsplash.com/400x300/?camp,tent" alt="Tent Site">
+          <h3>Tent Site</h3>
+          <p>広々としたテントサイトで自然を満喫</p>
+        </div>
+        <div class="facility-item">
+          <img src="https://source.unsplash.com/400x300/?rv,camping" alt="RV Site">
+          <h3>RV Site</h3>
+          <p>高品質なRVサイトで安心の宿泊体験</p>
+        </div>
+        <div class="facility-item">
+          <img src="https://source.unsplash.com/400x300/?campfire" alt="Campfire Area">
+          <h3>Campfire</h3>
+          <p>夜は焚き火の温もりも楽しめます</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="section booking">
+    <div class="container">
+      <h2>Book Your Stay</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="date">宿泊日</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="siteType">サイトの種類</label>
+          <select id="siteType" name="siteType">
+            <option value="tent">テントサイト</option>
+            <option value="rv">RVサイト</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">予約する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Access Section -->
+  <section id="access" class="section access">
+    <div class="container">
+      <h2>Access & Directions</h2>
+      <p>
+        キャンプ場の所在地および周辺地図をご確認ください。
+      </p>
+      <div class="map">
+        <img src="https://source.unsplash.com/1200x600/?map" alt="アクセスマップ">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="contactName">お名前</label>
+          <input type="text" id="contactName" name="contactName" placeholder="例：山田 太郎" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">メールアドレス</label>
+          <input type="email" id="contactEmail" name="contactEmail" placeholder="example@mail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" rows="5" placeholder="ご質問やメッセージを入力ください" required></textarea>
+        </div>
+        <button type="submit" class="btn">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 HerbalBansCamp. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
